@@ -1,0 +1,124 @@
+body {
+    margin-top : 13cm;
+    padding : 0;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    height : 100vh;
+    background-color : #a3e0e4;
+    }
+    .container {
+    background-color : rgb(194, 189, 202);
+    padding : 3ch;
+    border : #252323 solid 3px;
+    border-radius : 5px;
+    }
+    .block {
+    height : 75px;
+    width : 75px;
+    margin : 5px;
+    }
+    .stack-1 {
+    display : flex;
+    flex-direction : column;
+    }
+    .red {
+    background-color : rgb(250, 179, 27);
+    }
+    .green {
+    background-color : rgb(37, 202, 37);
+    }
+    .blue {
+    background-color : rgb(0, 247, 255);
+    }
+    .stack-2 {
+    display : flex;
+    flex-direction : row-reverse;
+    }
+    .red {
+    background-color : rgb(45, 119, 73);
+    }
+    .yellow {
+    background-color : yellow;
+    }
+    .green {
+    background-color : green;
+    }
+    .stack-3 {
+    display : flex;
+    justify-content : center;
+    flex-wrap : wrap;
+    }
+    .stack-3 .block {
+    height : 50px;
+    width : 50px;
+    margin : 5px;
+    background-color : #3b5968;
+    }
+    .stack-4 {
+    display : flex;
+    justify-content : space-between;
+    align-items : flex-end;
+    }
+    .stack-4 .block {
+    height : 50px;
+    width : 50px;
+    background-color : #3f943b;
+    }
+    .stack-5 {
+    display : flex;
+    justify-content : space-between;
+    flex-wrap : wrap;
+    }
+    .stack-5 .block {
+    height : 50px;
+    width : calc(33.33% - 10px);
+    margin : 5px;
+    background-color : #51508d;
+    flex-grow : 1;
+    }
+    .stack-6 {
+    display : flex;
+    flex-direction : column;
+    }
+    .stack-6 .block {
+    height : 50px;
+    width : 50px;
+    background-color : #ea21c5;
+    }
+    .stack-6 .block:nth-child(2) {
+    flex-grow : 1;
+    }
+    .stack-7 {
+    display : flex;
+    }
+    .stack-7 .block {
+    height : 50px;
+    width : 50px;
+    margin : 2px;
+    background-color : #38e0a0;
+    }
+    .stack-8 {
+    display : flex;
+    flex-wrap : wrap;
+    }
+    .stack-8 .block {
+    flex-basis : calc(33.33% - 6px);
+    margin : 3px;
+    background-color : #1d344e;
+    }
+    .stack-9 {
+    display : flex;
+    flex-wrap : wrap;
+    }
+    .stack-9 .block {
+    flex-basis : calc(33.33% - 6px);
+    margin : 3px;
+    background-color : #23f04f;
+    }
+    .stack-9 .block:nth-child(2), .stack-9 .block:nth-child(4) {
+    flex-grow : 1;
+    }
+    .stack-9 .block:nth-child(5) {
+    order : 1;
+    }
